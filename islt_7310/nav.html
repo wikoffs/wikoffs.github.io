@@ -4,7 +4,19 @@
                <meta charset="utf-8">
                <title>Page Title</title>
 </head>
-<body><nav><ul>
+<body><nav><ul>    #nav_menu ul{
+    list-style type: none;
+    padding: 1em 0;
+    text-align: center;
+    border-top: 2px solid black; }
+    #nav_menu ul li {
+        display: inline;
+        padding: 0 1.5em; }
+    #nav_menu ul li a {
+        font-weight: bold;
+        color: #669966; }
+    #nav_menu ul li a.current {text-decoration: none;}
+</ul>
      <li><a href="index.html">Home</a></li> 
     <li><a href="about.html">About</a></li> 
     <li>#project.html</li>
