@@ -4,6 +4,8 @@ ul {
   padding: 0;
   overflow: hidden;
   background-color: #006666;
+  border-style: solid;
+  border-color: black;
 }
 
 li {
