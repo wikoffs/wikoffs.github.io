@@ -1,3 +1,4 @@
+<style>
 #nav_menu ul {
     list-style-type: none;
     position: relative;}
@@ -14,7 +15,6 @@
        height: 50px;
        margin: 0;
     }
-#nav_menu ul li a.lastitem { border-right: none; }
 #nav_menu ul li ul {
     display: block;
     position: relative;
@@ -26,3 +26,4 @@
 }
 #nav_menu ul li { float: none;}
 }   
+</style>
