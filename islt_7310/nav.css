@@ -1,25 +1,60 @@
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: #006666;
-  border-style: solid;
-  border-color: black;
+#nav_menu{
+    border: 3px black solid;
+    margin: 0px;
+    padding: 0px;
+    height: 40px;
+    font-size: 20px;
+    margin-top: 15px;
+    width: 100%;
+    float: left;
+    font-family: 'Century Gothic';
+    background-color: #006666;
+    background-size: cover;
+    text-transform: uppercase;
 }
-
-li {
-  float: left;
+#nav_menu ul {
+    list-style: none;
+    position: relative; 
+    padding: 20px 0 20px 0;
 }
-
-li a {
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
+#nav_menu ul li { float: left; }
+#nav_menu ul ul {
+        display: none;
+        position: absolute;
+        top: 100%
 }
-
-li a:hover {
-  background-color: #006666;
+#nav_menu ul ul li { float: none; }
+#nav_menu ul li:hover > ul {
+    display: block; }
+#nav_menu > ul::after {
+        content: "";
+        display: block;
+        clear: both;
+    }
+#nav_menu ul {
+    margin: 0px;
+    padding: 0px; }
+#nav_menu ul li a {
+text-align: center;
+display: block;
+width: 176px;
+padding: 1 em 0;
+text-decoration: none;
+height: 40px;
+background-color: #006666;
+color: white;
+font-weight: none;
 }
+#nav_menu ul li.lastitem a {
+    width: 178px;
+}
+#nav_menu ul li a:hover, #nav_menu ul li a:focus {
+    background-color:black;
+}
+h1 img {Bridgewater_Sara.jpeg; 
+    border: 1px solid;
+    width: 50%;
+    height: auto;}
+main p:first-child::first-letter{ 
+        font-size: 200%;}
+main p {text-indent: 50px;}
