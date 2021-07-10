@@ -1,12 +1,15 @@
 body {
-    background-color: #68cece;
+    background-color: #9fe4e4;
   }
   h1 {
     color: #006666;
-  }
+    } 
   p {
     color: black;
   }
   li a{
       color: white;
   }
+nav area{
+  text-decoration: none;
+}
