@@ -58,3 +58,10 @@ h1 img {Bridgewater_Sara.jpeg;
 main p:first-child::first-letter{ 
         font-size: 200%;}
 main p {text-indent: 50px;}
+main {
+        border: 2px;
+        width: 900px;
+        margin: 10px;
+        padding: 0;
+        font-size: 16px;
+}
