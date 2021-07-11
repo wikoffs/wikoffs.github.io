@@ -14,8 +14,14 @@ nav area{
   text-decoration: none;
 }
 .item1 { grid-area: header; }
-.item2 { grid-area: menu; }
-.item3 { grid-area: main; }
+.item2 { grid-area: left; }
+.item3 { 
+  grid-area: main; 
+  main p:first-child::first-letter;
+    font-size: 200%;
+main p {text-indent: 50px;}
+main p {text-indent: 50px;}
+}
 .item4 { grid-area: right; }
 .item5 { grid-area: footer; }
 
@@ -38,4 +44,52 @@ nav area{
   font-size: 30px;
   padding: 20px;
   margin: 0px;
+}
+main p:first-child::first-letter{ 
+  font-size: 200%;}
+main p {text-indent: 50px;
+}
+#container{
+  width:960px;
+  margin: 0px auto;
+}
+
+#lef-column{
+  width: 700px;
+  float: left;
+  background: blue;
+}
+
+#right-column{
+  width: 260px;
+  float: left;
+  background: orange;
+}
+@media screen and (max-width:959px){
+  #container{
+    width: 100%;
+  }
+#left-column{
+  width: 70%
+}
+#right-column{
+  width: 30%;
+}
+img{
+  width:100%
+}
+}
+
+@media screen and (max-width:640px){
+  #left-column{
+    width: 100%;
+  }
+  #right-column{
+    width:100%;
+  }
+}
+@media screen and (max-width:640px){
+  #container{
+    width: 320px;
+  }
 }
