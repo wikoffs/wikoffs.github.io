@@ -55,6 +55,7 @@ height: auto;
 .item5 { grid-area: footer;
   font-size: 20px;
   font-family: Georgia, 'Times New Roman', Times, serif; 
+  position: left;
 }
 Bridgewater_Sara.jpg{ 
   width: 30%;
