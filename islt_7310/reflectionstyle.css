@@ -54,6 +54,7 @@ position: center;
 border-style: double;
 }
 .item5 { grid-area: footer;
+  background-image: url(image/background.jpg);
   font-size: 20px;
   font-family: Georgia, 'Times New Roman', Times, serif; 
   color: none;
@@ -62,4 +63,16 @@ border-style: double;
 Bridgewater_Sara.jpg { 
   width: 30%;
   height: auto; 
-position: center;}
+position: center;
+}
+.email img {
+  width: 100%;
+  transition: 0.5s all ease-in-out;
+}
+.item5:hover img {
+  transform: scale(1.5);
+}
+.phone img {
+  width: 100%;
+  transition: 0.5s all ease-in-out;
+}
