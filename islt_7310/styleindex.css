@@ -1,0 +1,76 @@
+body {
+    background-color: #58bbbb;
+  }
+  h1 {
+    color: #045a5a;
+    position: left;
+  }
+  p {
+    color: black;
+  }
+  li a{
+      color: white;
+  }
+  .grid-container {
+    display: grid;
+    grid-template-areas:
+      "header header header"
+      "menu menu menu"
+      "main  right right"
+      "footer footer footer";
+    grid-gap: 0;
+    background-color: none;
+    padding: 10px;
+    margin: 0;
+  }
+.item1 { grid-area: header;
+position: relative;
+Font-size: 150%;
+font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+height: auto;
+}
+.item2 { grid-area: menu;
+  width: auto;
+  height: auto;
+}
+.item3 { 
+grid-area: main; 
+width: 60%;
+height: auto;
+position: center;
+font-size: 25px;
+background-color: white;
+margin: 8%;
+padding: 4%
+}
+.item4 { grid-area: right;
+background-color: white;
+margin: 10%;
+padding: 2%;
+font-size: 25px;
+width: auto;
+height: auto;
+}
+.item5 { grid-area: footer;
+  background-image: url(image/background.jpg);
+  width: auto;
+  height: auto;
+  font-size: 20px;
+  font-family: Georgia, 'Times New Roman', Times, serif; 
+}
+.email img {
+  width: 100%;
+  transition: 0.5s all ease-in-out;
+}
+.item5:hover img {
+  transform: scale(1.5);
+}
+.phone img {
+  width: 100%;
+  transition: 0.5s all ease-in-out;
+}
+Bridgewater_Sara.jpg { 
+  width: auto;
+  height: auto; 
+position: center;
+}
