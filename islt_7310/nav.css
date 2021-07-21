@@ -1,68 +1,108 @@
-#nav_menu{
-    border: 3px black solid;
-    margin: 0px;
-    padding: 0px;
-    height: 40px;
-    font-size: 20px;
-    margin-top: 15px;
+#hamburger {
+    display: none;
+}
+nav {
     width: 100%;
-    float: left;
-    font-family: 'Century Gothic';
-    background-color: #006666;
-    background-size: cover;
-    text-transform: uppercase;
-}
-#nav_menu ul {
-    list-style: none;
-    position: relative; 
-    padding: 20px 0 20px 0;
-}
-#nav_menu ul li { float: left; }
-#nav_menu ul ul {
-        display: none;
-        position: absolute;
-        top: 100%
-}
-#nav_menu ul ul li { float: none; }
-#nav_menu ul li:hover > ul {
-    display: block; }
-#nav_menu > ul::after {
-        content: "";
-        display: block;
-        clear: both;
+    height: 50px;
+    background-color:#045a5a;
+   }
+
+nav ul  {
+    float:left;
     }
-#nav_menu ul {
-    margin: 0px;
-    padding: 0px; }
-#nav_menu ul li a {
-text-align: center;
-display: block;
-width: 176px;
-padding: 1 em 0;
-text-decoration: none;
-height: 40px;
-background-color: #006666;
-color: white;
-font-weight: none;
+nav ul li {
+    float: left;
+    list-style:none;
+    position: relative;
 }
-#nav_menu ul li.lastitem a {
-    width: 178px;
+nav a:hover {
+    background-color:#abcece;
 }
-#nav_menu ul li a:hover, #nav_menu ul li a:focus {
-    background-color:black;
+
+nav ul li a{
+    display: block;
+    font-family: 'Century Gothic'; 
+    font-weight: none;
+    color: white;
+    font-size: 20px;
+    padding: 0px 10px 10px 15px;
+    text-decoration: none;
 }
-h1 img {Bridgewater_Sara.jpeg; 
-    border: 1px solid;
-    width: 50%;
-    height: auto;}
-#item3 {
-main p:first-child::first-letter{ 
-        font-size: 200%;}
-main p {text-indent: 50px;}
-main {
-        border: 2px;
-        width: 900px;
-        margin: 10px;
-        padding: 0;
-        font-size: 16px;
+
+nav ul li ul{
+    display: none;
+    position: absolute;
+    background-color:#758888;
+    padding: 10px; 
+    border-radius: 0px 0px 7px 7px;
 }
+
+nav ul li:hover ul{
+    display: block; 
+}
+
+nav ul li ul li {
+    width: 100px;
+    text-align: center;
+    border-radius: 4px;      
+}
+nav ul li ul li a {
+    padding: 0px 12px;
+}
+
+nav ul li ul li a:hover {
+    background-color: black;
+}
+
+        @media only screen and (max-width: 640px) {
+                #hamburger {
+                display: inline-block;        
+                padding-left: 20px;        
+                width: 26px;        
+                float: left;        
+                font-size: 2em;
+            }
+           
+            nav ul, nav:active ul {
+                display: none;
+                position: absolute;
+                padding: 20px 20px 20px 0px;
+                top: 20px;
+            }
+            nav:hover ul {
+                display: inline-block;
+                float: left;
+                background-color: #a9cfcf;
+                padding: 5px;
+                border-right: 0px;
+            }
+            nav:hover #mobileHide  {
+                display: none;
+            }
+            nav li {
+                text-align: center;
+                padding: 0;
+                margin: 0;
+            
+            }    
+            nav>ul li {    
+                text-align: center;    
+                font-weight: bold;       
+                float: left;
+            }
+            nav a {    
+                text-decoration: none;    
+                display: inline-block;    
+                border-top: none;    
+                border-bottom: none;    
+                padding: 15px 0px 15px 35px;
+                width: 150px;    
+                margin-bottom: 2px;
+            }
+           
+            nav ul li ul {       
+                 display:none; 
+                    
+                }
+                
+                }

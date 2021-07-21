@@ -3,7 +3,12 @@ body {
   }
   h1 {
     color: #045a5a;
-    position: left;
+    position: relative;
+  }
+  h2 {
+color: black;
+font-size: 30px;
+font-family: 'Georgia';
   }
   p {
     color: black;
@@ -16,18 +21,22 @@ body {
     grid-template-areas:
       "header header header"
       "menu menu menu"
-      "main  right right"
+      "main  main main"
       "footer footer footer";
     grid-gap: 0;
-    background-color: none;
-    padding: 10px;
+    background-color:#58bbbb;
+    padding: 0;
     margin: 0;
   }
 .item1 { grid-area: header;
-position: relative;
-Font-size: 150%;
-font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-height: auto;
+position:relative;
+padding: 0;
+margin-left: 70%;
+Font-size: 25px;
+font-family: 'Aial Narrow';
+height: 10%;
+width: 60%;
+color: white;
 }
 .item2 { grid-area: menu;
   width: auto;
@@ -35,28 +44,35 @@ height: auto;
 }
 .item3 { 
 grid-area: main; 
-width: 60%;
-height: auto;
-position: center;
-font-size: 25px;
-background-color: white;
-margin: 8%;
-padding: 4%
+width: 70%;
+height: 10%;
+font-size: 30px;
+background-color: white; 
+margin: 5%;
+padding: 3%;
+border: solid;
+border-color: black;
+position: center; 
 }
-.item4 { grid-area: right;
-background-color: white;
-margin: 10%;
-padding: 2%;
-font-size: 25px;
-width: auto;
-height: auto;
+.center {
+  display: block;
+  margin-left: 25%;
+  margin-right; auto;
+  width: 50%;
+  border-style:dotted;
+  border-color: #045a5a;
 }
 .item5 { grid-area: footer;
+  display: block;
   background-image: url(image/background.jpg);
-  width: auto;
-  height: auto;
-  font-size: 20px;
+  width: 80%;
+  height: 2%;
+  font-size: 25px;
   font-family: Georgia, 'Times New Roman', Times, serif; 
+  padding: 3%;
+  margin: 2%;
+  text-align: center;
+  margin-left: 6%;
 }
 .email image {
   width: 100%;
