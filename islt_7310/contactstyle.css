@@ -35,18 +35,18 @@ body {
   }
 .item2 { grid-area: menu;
   width: 100%;
-  height: 50px;
-  padding: 0;
+  height: 20px;
+  padding: 0%;
   margin:0%;
 }
 .item3 { grid-area: main; 
-width: 60%;
+width: 40%;
 height: auto;
 position: relative;
 font-size: 26px;
 background-color: white;
 margin: 2%;
-padding: 3%;
+padding: 5%;
 font-family:Georgia, 'Times New Roman', Times, serif;
 margin-left: 18%;
 }
