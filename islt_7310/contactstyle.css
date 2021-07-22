@@ -19,18 +19,22 @@ body {
       "main  main main"
       "footer footer footer";
     grid-gap: 0;
-    background-color: none;
-    padding: 10px;
+    background-color: #58bbbb;
+    padding: 0;
     margin: 0;
   }
 .item1 { grid-area: header;
-position: relative;
-Font-size: 150%;
-font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-height: auto;
-}
+  position:relative;
+  padding: 0;
+  margin-left: 70%;
+  Font-size: 25px;
+  font-family: 'Aial Narrow';
+  height: 10%;
+  width: 60%;
+  color: white;
+  }
 .item2 { grid-area: menu;
-  width: auto;
+  width: 100%;
   height: auto;
 }
 .item3 { grid-area: main; 
@@ -43,16 +47,50 @@ margin: 9%;
 padding: 2%;
 font-family:Georgia, 'Times New Roman', Times, serif
 }
-.item4 { grid-area: footer;
-  height: auto;
-  font-size: 20px;
-  font-family: Georgia, 'Times New Roman', Times, serif; 
+.center {
+  display: block;
+  border-style:dotted;
+  border-color: #045a5a;
+  margin-left: 30%;
+  margin-right: auto;
+}
+input[type=text], select, textarea {
+  width: 100%; 
+  padding: 12px; 
+  border: 1px solid #ccc; 
+  border-radius: 4px; 
+  box-sizing: border-box; 
+  margin-top: 6px; 
+  margin-bottom: 16px; 
+  resize: vertical 
+}
+input[type=submit] {
+  background-color: #04AA6D;
   color: white;
-  position: left;
-  width:auto;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
 }
 .item5 {grid-area: footer;
-background-image: url(image/background.jpg)
+  display: block;
+  background-image: url(image/background.jpg);
+  width: 70%;
+  height: 2%;
+  font-size: 20px;
+  font-family: Georgia, 'Times New Roman', Times, serif; 
+  padding: 2%;
+  margin: 2%;
+  text-align: center;
+  margin-left: 25%;
 }
 Bridgewater_Sara.jpg { 
   width: 30%;
@@ -70,3 +108,8 @@ position: center;
   width: 100%;
   transition: 0.5s all ease-in-out;
 }
+.formid{    
+  grid-area: form-area;
+  text-align: left; 
+}
+ 

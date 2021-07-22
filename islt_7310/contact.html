@@ -2,12 +2,14 @@
 <html lang="en-US">
 <head>
                <meta charset="utf-8">
+               <meta name="viewport" content="width=device-width, initial-scale=1">
                <title>Contact Page</title>
                <link rel="stylesheet" href="contactstyle.css"> 
                <link rel="stylesheet" href="nav.css">
-               <meta name="viewport" content="width=device-width, initial-scale=1">
+                <link rel="shortcut icon" type="image/favicon"href="favicon.ico">
 </head>
 <body>
+    <nav></nav>
     <div class="grid-container"></div>
         <div class="item2">
         <nav id="nav_menu">
@@ -28,12 +30,25 @@
             <div class="item1">Sara Bridgewater, MPH</div>
             <div class="item3">
             <img src="image/Bridgewater_Sara.jpg"
-            alt="Sara Image">  
-            <h1>Contact Information</h1>
-            <p>Sara Bridgewater</p>
-           <p>sbridgewater@missouri.edu</p>
-            <p>660.679.4167</p>
-            
+            alt="Sara Image" class="center">
+            <h1>Contact Me!</h1>
+    <div class="item4">  
+            <form id="emailform" action="mailto:sbridgewater@mail.missouri.edu?Subject=Portfolio%20Website%20Contact" method="post">
+        <label for="fname">First Name</label>
+                  <input type="text" id="fname" name="firstname" placeholder="Your Name" required>
+              
+                  <label for="lname">Last Name</label>
+                  <input type="text" id="lname" name="lastname" placeholder="Your Last Name" required>
+                  
+                  <label for="email">Email</label>
+                  <input type="text" id="email" name="Email" placeholder="janedoe@email.com"required>
+
+                  <label for="subject">Message</label>
+                  <textarea id="subject" name="subject" placeholder="Message, Comments, Questions...." style="height:200px" required></textarea>
+                  <input type="submit" value="Submit">
+                </form>
+              </div>
+        </div>    
         <div class="item5">    Sara Bridgewater
             <img src="image/email.png"    
         alt="email image"/>
