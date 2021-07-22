@@ -1,0 +1,109 @@
+#hamburger {
+    display: none;
+}
+nav {
+    width: 100%;
+    height: 50px;
+    background-color:#045a5a;
+   }
+
+nav ul  {
+    float:left;
+    }
+nav ul li {
+    float: left;
+    list-style:none;
+    position: relative;
+}
+nav a:hover {
+    background-color:#abcece;
+
+}
+
+nav ul li a{
+    display: block;
+    font-family: 'Century Gothic'; 
+    font-weight: none;
+    color: white;
+    font-size: 20px;
+    padding: 0px 10px 10px 15px;
+    text-decoration: none;
+}
+
+
+nav ul li ul{
+    display: none;
+    position: absolute;
+    background-color:#758888;
+    padding: 10px; 
+    border-radius: 0px 0px 7px 7px;
+}
+
+
+nav ul li:hover ul{
+    display: block; 
+}
+
+nav ul li ul li {
+    width: 100px;
+    text-align: center;
+    border-radius: 4px;      
+}
+nav ul li ul li a {
+    padding: 0px 12px;
+}
+nav ul li ul li a:hover {
+    background-color: black;
+}
+
+        @media only screen and (max-width: 640px) {
+                #hamburger {
+                display: inline-block;        
+                padding-left: 20px;        
+                width: 26px;        
+                float: left;        
+                font-size: 2em;
+            }
+           
+            nav ul, nav:active ul {
+                display: none;
+                position: absolute;
+                padding: 20px 20px 20px 0px;
+                top: 20px;
+            }
+            nav:hover ul {
+                display: inline-block;
+                float: left;
+                background-color: #a9cfcf;
+                padding: 5px;
+                border-right: 0px;
+            }
+            nav:hover #mobileHide  {
+                display: none;
+            }
+            nav li {
+                text-align: center;
+                padding: 0;
+                margin: 0;
+            
+            }    
+            nav>ul li {    
+                text-align: center;    
+                font-weight: bold;       
+                float: left;
+            }
+            nav a {    
+                text-decoration: none;    
+                display: inline-block;    
+                border-top: none;    
+                border-bottom: none;    
+                padding: 15px 0px 15px 35px;
+                width: 150px;    
+                margin-bottom: 2px;
+            }
+           
+            nav ul li ul {       
+                 display:none; 
+                    
+                }      
+                }
