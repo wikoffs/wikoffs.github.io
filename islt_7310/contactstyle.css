@@ -5,6 +5,11 @@ body {
     color: #045a5a;
     position: left;
   }
+  h2 {
+    color: black;
+    font-size: 20px;
+    font-family: 'Georgia';
+    }
   p {
     color: black;
   }
@@ -27,7 +32,6 @@ body {
   position:relative;
   padding: 0%;
   margin-left: 70%;
-  Font-size: 25px;
   font-family: 'Aial Narrow';
   height: 10%;
   width: 60%;
@@ -35,19 +39,23 @@ body {
   }
 .item2 { grid-area: menu;
   width: 100%;
-  height: 50px;
+  height: auto;
   padding: 0%;
+  background-color: #045a5a;
+  margin-left: 12%;
 }
 .item3 { grid-area: main; 
-width: 40%;
+width: 50%;
 height: auto;
 position: relative;
-font-size: 26px;
+font-size: 25px;
 background-color: white;
-margin: 5%;
-padding: 8%;
+margin: 4%;
+padding: 3%;
 font-family:Georgia, 'Times New Roman', Times, serif;
-margin-left: 22%;
+margin-left: 15%;
+border: solid;
+border-color: black;
 }
 .center {
   display: block;
@@ -84,17 +92,17 @@ input[type=submit]:hover {
   background-color: #f2f2f2;
   padding: 20px;
 }
-.item5 {grid-area: footer;
+.item5 { grid-area: footer;
   display: block;
   background-image: url(image/background.jpg);
   width: 70%;
-  height: 2%;
+  height: auto%;
   font-size: 20px;
   font-family: Georgia, 'Times New Roman', Times, serif; 
-  padding: 2%;
-  margin: 2%;
+  padding: 0%;
+  margin: 0%;
   text-align: center;
-  margin-left: 10%;
+  margin-left: 16%;
 }
 Bridgewater_Sara.jpg { 
   width: 30%;

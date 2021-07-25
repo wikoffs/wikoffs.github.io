@@ -5,6 +5,11 @@ body {
     color: #045a5a;
     position: left;
   }
+  h2 {
+    color: black;
+font-size: 20px;
+font-family: 'Georgia';
+  }
   p {
     color: black;
   }
@@ -16,7 +21,7 @@ body {
     grid-template-areas:
       "header header header"
       "menu menu menu"
-      "main  right right"
+      "main  main main"
       "footer footer footer";
     grid-gap: 0;
     background-color: none;
@@ -24,41 +29,51 @@ body {
     margin: 0;
   }
 .item1 { grid-area: header;
-position: relative;
-Font-size: 150%;
-font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-height: auto;
+  position:relative;
+  padding: 0;
+  margin: 0;
+  margin-left: 70%;
+  font-family: 'Aial Narrow';
+  height: 0%;
+  width: 60%;
 }
 .item2 { grid-area: menu;
-  width: auto;
+  width: 30%;
   height: auto;
+  padding: 2%;
+  margin: 2%;
+  background-color: #045a5a;
+  margin-left: 12%;
 }
 .item3 { grid-area: main; 
-width: 90%;
-height: 80%;
-position: relative;
-font-size: 26px;
-background-color: white;
-margin: 9%;
-padding: 2%;
-font-family:Georgia, 'Times New Roman', Times, serif
+  width: 70%;
+  height: auto;
+  position: relative;
+  font-size: 25px;
+  background-color: white;
+  margin: 3%;
+  padding: 3%;
+  font-family:Georgia, 'Times New Roman', Times, serif;
+  margin-left: 15%;
+  border: solid;
+  border-color: black;
 }
-.item4 { grid-area: right;
-background-color:#045a5a;
-margin: 8%;
-padding: 4%;
-font-size: 25px;
-width: 70%;
-height: 60%;
-position: center;
-border-style: double;
+.mappic {
+  width: 40%;
+  height: auto;
+  margin-left: 20%;
 }
 .item5 { grid-area: footer;
+  display: block;
   background-image: url(image/background.jpg);
+  width: 70%;
+  height: 50%;
   font-size: 20px;
   font-family: Georgia, 'Times New Roman', Times, serif; 
-  color: none;
-  background-color: #58bbbb;
+  padding: 0%;
+  margin: 0%;
+  text-align: center;
+  margin-left: 16%;
 }
 Bridgewater_Sara.jpg { 
   width: 30%;

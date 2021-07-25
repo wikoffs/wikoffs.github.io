@@ -7,7 +7,7 @@ body {
   }
   h2 {
 color: black;
-font-size: 30px;
+font-size: 20px;
 font-family: 'Georgia';
   }
   p {
@@ -32,27 +32,29 @@ font-family: 'Georgia';
 position:relative;
 padding: 0;
 margin-left: 70%;
-Font-size: 25px;
 font-family: 'Aial Narrow';
 height: 10%;
 width: 60%;
-color: white;
 }
 .item2 { grid-area: menu;
-  width: auto;
+  width: 100%;
   height: auto;
+  padding: 0%;
+  background-color: #045a5a;
+  margin-left: 12%;
 }
 .item3 { 
 grid-area: main; 
 width: 70%;
-height: 10%;
-font-size: 30px;
+height: auto;
+font-size: 25px;
 background-color: white; 
-margin: 5%;
+margin: 4%;
 padding: 3%;
 border: solid;
 border-color: black;
 position: center; 
+margin-left: 12%;
 }
 .center {
   display: block;
@@ -63,17 +65,17 @@ position: center;
   border-color: #045a5a;
 }
 .item5 { grid-area: footer;
-  display: block;
-  background-image: url(image/background.jpg);
-  width: 80%;
-  height: 2%;
-  font-size: 25px;
-  font-family: Georgia, 'Times New Roman', Times, serif; 
-  padding: 3%;
-  margin: 2%;
-  text-align: center;
-  margin-left: 6%;
-}
+    display: block;
+    background-image: url(image/background.jpg);
+    width: 70%;
+    height: auto%;
+    font-size: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif; 
+    padding: 0%;
+    margin: 0%;
+    text-align: center;
+    margin-left: 16%;
+  }
 .email image {
   width: 100%;
   transition: 0.5s all ease-in-out;
@@ -89,4 +91,32 @@ Bridgewater_Sara.jpg {
   width: auto;
   height: auto; 
 position: center;
+}
+@media print {
+  * {
+      background: transparent !important;
+      color: #000 !important;
+      box-shadow: none !important;
+      text-shadow: none !important;
+      font-family: 'Times New Roman', Times, serif;
+  }
+  h1 {
+      margin: 0;
+      padding: 0;
+  }
+  ul {
+      padding-left: 0%;
+  }
+  .grid-container { 
+      font-size: 50%;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+  }
+  .nav-list {
+      display: none;
+  }
+  @page {
+      margin: 1in;
+  }
 }
