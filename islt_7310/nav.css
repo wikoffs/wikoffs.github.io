@@ -24,7 +24,7 @@ nav a:hover {
 nav ul li a{
     display: block;
     font-family: 'Century Gothic'; 
-    font-weight: none;
+    font-weight:normal;
     color: white;
     font-size: 20px;
     padding: 0px 10px 10px 15px;
