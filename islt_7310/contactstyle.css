@@ -96,7 +96,7 @@ input[type=submit]:hover {
   display: block;
   background-image: url(image/background.jpg);
   width: 70%;
-  height: auto%;
+  height: auto;
   font-size: 20px;
   font-family: Georgia, 'Times New Roman', Times, serif; 
   padding: 0%;
