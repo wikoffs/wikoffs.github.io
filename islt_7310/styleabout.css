@@ -71,6 +71,9 @@ font-family: 'Georgia';
   font-weight: bold;
   margin-left: 35%;
 }
+.fig{
+  margin-left:25%;
+}
 .item4 { grid-area: right;
 background-color: white;
 margin: 0%;
@@ -96,6 +99,8 @@ height: auto;
   border-collapse: collapse;
   font-family: Georgia, 'Times New Roman', Times, serif;
   margin-left: 15%;
+  width: auto;
+  height: auto;
 }
 .table caption {
   text-align: center;
